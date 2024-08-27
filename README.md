@@ -22,3 +22,13 @@ hooks(life cycle method:Created,updated,deleted)
 
 npx-node package execution
 npx create-react-app project-name
+
+State $ Hooks
+State=>Is used for storing the data
+Hooks are used for using that data(we can interact with state variable)
+
+#Run
+cd project-name
+npm start
+
+Props -> Are used 

@@ -2,14 +2,18 @@
 import './App.css';
 import ClassComponent from './components/ClassComponent';
 import FunctionComponent  from './components/FunctionComponent'
-
+import { useState } from 'react';
 function App() {
+  const author="rk";
+  const [name,setName]=useState("DT");
   return (
     <div className="App">
 <p>Class Components</p>
 <ClassComponent/>
 <p>Function Components</p>
-<FunctionComponent/>
+{/* 
+<FunctionComponent name="Devtown" age={20} author={author}/> */}
+<FunctionComponent name={name} age={20} author={author} setName={setName} />
     </div>
   );
 }
