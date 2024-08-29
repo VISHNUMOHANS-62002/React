@@ -32,3 +32,19 @@ cd project-name
 npm start
 
 Props -> Are used 
+
+#Routing N layouts
+Router>>Routes>>Route
+npm i react-router-dom
+
+##Life Cycle Method
+render(){
+
+}
+cdm method
+componentDidMount(){
+
+}
+componentWillUnmount(){
+        
+}

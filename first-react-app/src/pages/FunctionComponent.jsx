@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
-import BaseHoc from '../hoc/BaseHoc';
 
-function FunctionComponent(props) {
+
+function FunctionComponent({name,age,author,setName}) {
   
   const[changeName,setChangeName]=useState("");
   const reduceCount=()=>{
@@ -14,12 +14,12 @@ function FunctionComponent(props) {
          <button onClick={()=>setCount(count+1)}>Click here to increment/add</button>
          <button onClick={reduceCount}>Click here to decrement</button>
          <h2>{count}</h2>
-         <h4>My company name is {props.name} it is of {props.age} yrs old and the author is {props.author}</h4>
+         <h4>My company name is {name} it is of {age} yrs old and the author is {author}</h4>
          <input onChange={(e)=>setChangeName(e.target.value)}/>
-         <button onClick={()=>props.setName(changeName)}>Change name to ...</button>
+         <button onClick={()=>setName(changeName)}>Change name to ...</button>
       </div>
     );
   }
   
-  export default BaseHoc(FunctionComponent);
+  export default FunctionComponent;
   
